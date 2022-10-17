@@ -46,4 +46,4 @@
 	unstage = restore --staged
 	
 [core]
-	excludesfile = /Users/jadbsaid/.gitignore
+	excludesfile = ~/.gitignore
