@@ -1,6 +1,4 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-# oh-my-zsh install path
+# ohmyzsh
 export ZSH="$HOME/.oh-my-zsh"
 
 #GOPATH
@@ -27,7 +25,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # ALIASES
-
 alias ..='cd ..'
 alias link='ln -s'
 alias restart='sudo shutdown -r now'
@@ -36,9 +33,6 @@ alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
 alias zshrc='vim ~/.zshrc'
 
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
-
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+# PERMISSIONS
+alias privatize="sudo chmod 600"
+alias publicize="sudo chmod 777"
