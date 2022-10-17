@@ -26,5 +26,19 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# ALIASES
+
+alias ..='cd ..'
+alias link='ln -s'
+alias restart='sudo shutdown -r now'
+alias shutdown='sudo shutdown now'
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
+alias zshrc='vim ~/.zshrc'
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
