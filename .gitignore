@@ -1,1 +1,16 @@
-*~
+#aws
+*.aws-sam
+
+# external
+.Spotlight-V100
+.Trashes
+
+# intellij
+*.idea
+
+# mac
+*.DS_STORE
+
+# python
+*.pyc
+__pycache__
