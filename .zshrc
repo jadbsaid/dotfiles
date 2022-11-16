@@ -18,7 +18,7 @@ export NVM_DIR="$HOME/.nvm"
 export ES_JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home
 
 # https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="passion"
+ZSH_THEME="lambda"
 
 plugins=(git)
 
@@ -29,8 +29,8 @@ alias ..='cd ..'
 alias link='ln -s'
 alias restart='sudo shutdown -r now'
 alias shutdown='sudo shutdown now'
-alias update='sudo apt-get update'
-alias upgrade='sudo apt-get upgrade'
+alias update='brew update'
+alias upgrade='brew upgrade'
 alias zshrc='vim ~/.zshrc'
 
 # PERMISSIONS
