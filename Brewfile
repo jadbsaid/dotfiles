@@ -46,8 +46,6 @@ brew "sipcalc"
 brew "watch"
 # Internet file retriever
 brew "wget"
-# AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
-brew "aws/tap/aws-sam-cli"
 # Distributed search & analytics engine
 brew "elastic/tap/elasticsearch-full"
 # Analytics and search dashboard for Elasticsearch
