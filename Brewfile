@@ -54,8 +54,6 @@ brew "elastic/tap/kibana-full"
 brew "go-task/tap/go-task"
 # Universal database tool and SQL client
 cask "dbeaver-community"
-# Reimagine your terminal
-cask "fig"
 # Open-source Markdown editor
 cask "macdown"
 # Collaboration platform for API development
