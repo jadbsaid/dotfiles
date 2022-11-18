@@ -1,7 +1,7 @@
 [url "ssh://git@github.com/Jad-S"]
 	insteadOf = https://github.com/Jad-S
 [user]
-    email = 72901857+Jad-S@users.noreply.github.com
+	email = 72901857+Jad-S@users.noreply.github.com
 	name = Jad
 [filter "lfs"]
 	process = git-lfs filter-process
@@ -47,3 +47,5 @@
 	
 [core]
 	excludesfile = ~/.gitignore
+[init]
+	defaultBranch = main

@@ -12,6 +12,8 @@ brew "awscli"
 brew "coreutils"
 # Enhanced version of dd for forensics and security
 brew "dcfldd"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -56,6 +58,8 @@ brew "elastic/tap/kibana-full"
 brew "go-task/tap/go-task"
 # Universal database tool and SQL client
 cask "dbeaver-community"
+# App to build and share containerized applications and microservices
+cask "docker"
 # Reimagine your terminal
 cask "fig"
 # Open-source Markdown editor
