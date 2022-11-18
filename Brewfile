@@ -44,6 +44,8 @@ brew "pyenv"
 brew "python@3.9"
 # Advanced console-based IP subnet calculator
 brew "sipcalc"
+# Terminal multiplexer
+brew "tmux"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Internet file retriever
