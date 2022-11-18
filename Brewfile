@@ -12,8 +12,6 @@ brew "awscli"
 brew "coreutils"
 # Enhanced version of dd for forensics and security
 brew "dcfldd"
-# User-friendly command-line shell for UNIX-like operating systems
-brew "fish"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -48,8 +46,6 @@ brew "sipcalc"
 brew "watch"
 # Internet file retriever
 brew "wget"
-# AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
-brew "aws/tap/aws-sam-cli"
 # Distributed search & analytics engine
 brew "elastic/tap/elasticsearch-full"
 # Analytics and search dashboard for Elasticsearch
@@ -58,10 +54,6 @@ brew "elastic/tap/kibana-full"
 brew "go-task/tap/go-task"
 # Universal database tool and SQL client
 cask "dbeaver-community"
-# App to build and share containerized applications and microservices
-cask "docker"
-# Reimagine your terminal
-cask "fig"
 # Open-source Markdown editor
 cask "macdown"
 # Collaboration platform for API development
