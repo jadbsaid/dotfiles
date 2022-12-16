@@ -26,6 +26,8 @@ brew "htop"
 brew "influxdb", restart_service: true
 # Tail multiple files in one terminal simultaneously
 brew "multitail"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # Port scanning utility for large networks
 brew "nmap"
 # Platform built on V8 to build network applications
@@ -62,6 +64,8 @@ cask "dbeaver-community"
 cask "docker"
 # Open-source Markdown editor
 cask "macdown"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Collaboration platform for API development
 cask "postman"
 # Text editor for code, markup and prose

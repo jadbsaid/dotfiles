@@ -1,7 +1,7 @@
 [url "ssh://git@github.com/Jad-S"]
 	insteadOf = https://github.com/Jad-S
 [user]
-	email = 72901857+Jad-S@users.noreply.github.com
+	email = jadbsaid@gmail.com
 	name = Jad
 [filter "lfs"]
 	process = git-lfs filter-process
