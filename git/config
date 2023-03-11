@@ -1,51 +1,44 @@
-[url "ssh://git@github.com/Jad-S"]
-	insteadOf = https://github.com/Jad-S
+[url "ssh://git@github.com/"]
+   insteadOf = https://github.com/
+
 [user]
 	email = jadbsaid@gmail.com
-	name = Jad
-[filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+	name = Jad Said
+
 [alias]
-	; mnemonic for add
 	a = add
-	; mnemonic for add all
 	aa = add .
 
-	; custom branch display
 	b = for-each-ref --sort=-committerdate refs/heads/ --count=5 --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(color:blue)%(contents:subject) %(color:reset) - %(color:magenta)%(authorname)%(color:reset) - (%(color:green)%(committerdate:relative)%(color:reset))'
 
-	; commit changes
 	c = commit
-
-	; commit changes with msg
 	cm = commit -m
 
-	; checkout
 	co = checkout
 
-	; full logs in custom print (limit 10)
 	l = log --pretty=format:'%Cgreen%ar%Creset- %C(Magenta)%s%Creset - %C(Yellow)%an%Creset - %Cred%h%Creset ' -10
 
-	; pull remote repo
 	p = pull
-
-	; pull autostash to quickly resolves conflicts during pull
 	pa = pull --autostash
-
-    ; push changes
 	pu = push
 
-	; displays status (short/full)
 	st = status --short
 	stat = status
 
-	; To unstage files, etc
 	unstage = restore --staged
 	
 [core]
 	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
+
+[credential]
+	helper = osxkeychain
+
 [init]
 	defaultBranch = main
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
