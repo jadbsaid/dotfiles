@@ -3,6 +3,4 @@ if status is-interactive
 end
 
 # go
-set -x GOPATH $HOME/go
-set -x GOROOT /usr/local/go
-set PATH $GOPATH/bin $GOROOT/bin $PATH
+fish_add_path (go env GOPATH)/bin
