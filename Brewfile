@@ -20,6 +20,8 @@ brew "gh"
 brew "git"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# OpenType text shaping engine
+brew "harfbuzz"
 # Improved top (interactive process viewer)
 brew "htop"
 # Time series, events, and metrics database
@@ -44,6 +46,8 @@ brew "pure"
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
+# Multi-media library with bindings for multiple languages
+brew "sfml"
 # Advanced console-based IP subnet calculator
 brew "sipcalc"
 # Terminal multiplexer
@@ -52,6 +56,8 @@ brew "tmux"
 brew "watch"
 # Internet file retriever
 brew "wget"
+# AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
+brew "aws/tap/aws-sam-cli"
 # Distributed search & analytics engine
 brew "elastic/tap/elasticsearch-full"
 # Analytics and search dashboard for Elasticsearch
