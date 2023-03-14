@@ -44,8 +44,6 @@ brew "osmosis"
 brew "pure"
 # Python version management
 brew "pyenv"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Multi-media library with bindings for multiple languages
 brew "sfml"
 # Advanced console-based IP subnet calculator
