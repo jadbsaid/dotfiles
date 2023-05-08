@@ -6,7 +6,7 @@
 .Trashes
 
 # intellij
-*.idea
+*.idea/
 
 # mac
 *.DS_STORE
