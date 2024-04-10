@@ -1,0 +1,13 @@
+# Mac
+.DS_Store
+
+# Jetbrains
+.idea/
+
+# General
+log/
+.log
+
+# Git
+.gitattributes
+
