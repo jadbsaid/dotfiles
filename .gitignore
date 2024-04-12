@@ -1,16 +1,31 @@
-#aws
-*.aws-sam
+# fish
+.config/fish/conf.d
+.config/fish/fish_variables
+.config/fish/completions
 
-# external
-.Spotlight-V100
-.Trashes
+# mac files
+.CFUserTextEncoding
+.DS_Store
 
-# intellij
-*.idea/
+# mac directories
+Applications/
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+.Trash/
 
-# mac
-*.DS_STORE
-
-# python
-*.pyc
-__pycache__
+# various files
+.local
+.lesshst
+.ssh
+.idea
+.viminfo
+.vim/tmp
+.zprofile
+.zsh_history
+.zsh_sessions
