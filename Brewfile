@@ -4,8 +4,6 @@ tap "elastic/tap"
 tap "go-task/tap"
 tap "homebrew/autoupdate"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 tap "homebrew/services"
 # Zstandard is a real-time compression algorithm
 brew "zstd"
@@ -69,8 +67,6 @@ brew "vhs"
 brew "watch"
 # Internet file retriever
 brew "wget"
-# AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
-brew "aws/tap/aws-sam-cli"
 # A personal key value store 🛼
 brew "charmbracelet/tap/skate"
 # Distributed search & analytics engine
