@@ -23,6 +23,7 @@ Public/
 .local
 .lesshst
 .ssh
+.npm
 .idea
 .viminfo
 .vim/tmp
