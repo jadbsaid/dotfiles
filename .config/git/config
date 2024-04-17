@@ -4,6 +4,7 @@
 [user]
 	email = jadbsaid@gmail.com
 	name = Jad
+	signingkey = ~/.ssh/id_ed25519.pub
 
 [alias]
 	a = add
@@ -43,3 +44,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
