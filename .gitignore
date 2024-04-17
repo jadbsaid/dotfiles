@@ -3,6 +3,9 @@
 .config/fish/fish_variables
 .config/fish/completions
 
+# default go directory
+/go
+
 # mac files
 .CFUserTextEncoding
 .DS_Store
