@@ -9,6 +9,9 @@
 # default go directory
 /go
 
+# gh copilot 
+.config/github-copilot
+
 # mac files
 .CFUserTextEncoding
 .DS_Store
@@ -33,6 +36,7 @@ Public/
 .ssh
 .npm
 .idea
+.vscode
 .viminfo
 .vim/tmp
 .zprofile
