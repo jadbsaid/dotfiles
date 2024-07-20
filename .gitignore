@@ -30,6 +30,7 @@ Public/
 
 # various files
 .aws*
+.cache
 .local
 .docker
 .lesshst
