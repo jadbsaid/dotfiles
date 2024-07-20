@@ -36,6 +36,7 @@ Public/
 .ssh
 .npm
 .idea
+.cups
 .vscode
 .viminfo
 .vim/tmp
