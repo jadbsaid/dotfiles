@@ -84,7 +84,10 @@ return {
                 { name = 'luasnip' }, -- For luasnip users.
             }, {
                 { name = 'buffer' },
-            })
+            }),
+			enabled = function()
+				return vim.bo.filetype ~= "markdown"
+			end,
         })
 
         vim.diagnostic.config({
