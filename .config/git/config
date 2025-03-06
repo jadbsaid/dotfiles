@@ -23,6 +23,8 @@
 	pa = pull --autostash
 	pu = push
 
+	sh = show
+
 	st = status --short
 	stat = status
 
