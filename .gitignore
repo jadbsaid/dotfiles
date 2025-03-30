@@ -36,9 +36,9 @@ Public/
 .lesshst
 .ssh
 .npm
+.npmrc
 .idea
 .cups
-.vscode
 .viminfo
 .vim/tmp
 .zprofile
