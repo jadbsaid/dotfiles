@@ -31,7 +31,7 @@
 	unstage = restore --staged
 	
 [core]
-	excludesfile = ~/.gitignore
+	excludesFile = ~/.config/git/ignore
 	attributesfile = ~/.gitattributes
 	ignorecase = false
 

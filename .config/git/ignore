@@ -1,13 +1,46 @@
-# Mac
+# fish
+.config/fish/conf.d
+.config/fish/fish_variables
+.config/fish/completions
+
+# code directory
+/src
+
+# default go directory
+/go
+
+# gh copilot 
+.config/github-copilot
+
+# mac files
+.CFUserTextEncoding
 .DS_Store
 
-# Jetbrains
-.idea/
+# mac directories
+Applications/
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+.Trash/
 
-# General
-log/
-.log
-
-# Git
-.gitattributes
-
+# various files
+.aws*
+.cache
+.local
+.docker
+.lesshst
+.ssh
+.npm
+.npmrc
+.idea
+.cups
+.viminfo
+.vim/tmp
+.zprofile
+.zsh_history
+.zsh_sessions
