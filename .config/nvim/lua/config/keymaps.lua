@@ -4,3 +4,8 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- yank to clipboard
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
+
+--- formatting
+vim.keymap.set("n", "<leader>f", function()
+    require("conform").format({ bufnr = 0, lsp_fallback = true })
+end)
