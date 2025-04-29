@@ -9,6 +9,10 @@ vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set("n", "<leader>ya", "ggVG\"+y")
 
+vim.keymap.set('n', '<leader>dt', function()
+  require('dap-go').debug_test()
+end, {})
+
 --- formatting
 vim.keymap.set("n", "<leader>f", function()
     require("conform").format({ bufnr = 0, lsp_fallback = true })
