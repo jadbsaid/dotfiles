@@ -40,6 +40,7 @@ return {
                 "rust_analyzer",
                 "gopls",
             },
+            automatic_enable = false,
             handlers = {
                 function(server_name) -- default handler (optional)
                     require("lspconfig")[server_name].setup {
