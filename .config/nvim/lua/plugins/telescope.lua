@@ -8,16 +8,30 @@ return {
     },
 
     config = function()
-        require('telescope').setup({})
+        require('telescope').setup({
+            defaults = {
+                vimgrep_arguments = {
+                    'rg',
+                    '--color=never',
+                    '--no-heading',
+                    '--with-filename',
+                    '--line-number',
+                    '--column',
+                    '--smart-case',
+                    '--hidden',
+                    '--no-ignore',
+                }
+            },
+        })
 
         local builtin = require('telescope.builtin')
         vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
-		vim.keymap.set('n', '<leader>cf',function()
-			builtin.find_files{ cwd = vim.fn.stdpath('config')}
-		end)
-		vim.keymap.set('n', '<leader>sf',function()
-			builtin.find_files{ cwd = vim.fn.expand('~/src')}
-		end)
+        vim.keymap.set('n', '<leader>cf', function()
+            builtin.find_files { cwd = vim.fn.stdpath('config') }
+        end)
+        vim.keymap.set('n', '<leader>sf', function()
+            builtin.find_files { cwd = vim.fn.expand('~/src') }
+        end)
         vim.keymap.set('n', '<C-p>', builtin.git_files, {})
         vim.keymap.set('n', '<leader>pws', function()
             local word = vim.fn.expand("<cword>")
