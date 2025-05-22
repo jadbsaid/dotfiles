@@ -39,6 +39,8 @@ Public/
 .npmrc
 .idea
 .cups
+.cargo
+.rustup
 .viminfo
 .vim/tmp
 .zprofile
