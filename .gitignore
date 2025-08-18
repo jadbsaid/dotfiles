@@ -45,4 +45,5 @@ Public/
 .vim/tmp
 .zprofile
 .zsh_history
+.psql_history
 .zsh_sessions
