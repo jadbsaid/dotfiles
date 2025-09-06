@@ -11,9 +11,9 @@ return {
                     hide_during_completion = false,
                     debounce = 25,
                     keymap = {
-                        accept = "<M-l>",
-                        prev = "<M-[>",
-                        next = "<M-]",
+                        accept = "<C-y>",
+                        prev = "<C-p>",
+                        next = "<C-n>",
                         dismiss = "<C-e>",
                     },
                 },
