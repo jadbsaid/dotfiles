@@ -4,6 +4,7 @@ keybind = alt+left=unbind
 keybind = alt+right=unbind
 macos-option-as-alt = true
 
+background-opacity = 1.0
 font-size = 12
 font-feature = -liga
 font-feature = -dlig
