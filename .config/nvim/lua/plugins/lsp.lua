@@ -17,13 +17,13 @@ return {
     config = function()
         require("conform").setup({
             formatters_by_ft = {
-				lua = { "stylua" },
-				go = { "gofmt" },
-				python = { "black" },
-				javascript = { "prettier" },
-				typescript = { "prettier" },
-			}
-		})
+                lua = { "stylua" },
+                go = { "gofmt" },
+                python = { "black" },
+                javascript = { "prettier" },
+                typescript = { "prettier" },
+            }
+        })
         local cmp = require('cmp')
         local cmp_lsp = require("cmp_nvim_lsp")
         local capabilities = vim.tbl_deep_extend(
@@ -65,6 +65,21 @@ return {
             }
         })
 
+        -- Auto organize imports/format Go files on save
+        vim.api.nvim_create_autocmd('BufWritePre', {
+            pattern = '*.go',
+            callback = function()
+                local orignal = vim.notify
+                vim.notify = function(msg, level, opts)
+                    if msg == 'No code actions available' then
+                        return
+                    end
+                    orignal(msg, level, opts)
+                end
+                vim.lsp.buf.code_action({ context = { only = { 'source.organizeImports' } }, apply = true })
+            end,
+        })
+
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
         cmp.setup({
@@ -86,9 +101,9 @@ return {
             }, {
                 { name = 'buffer' },
             }),
-			enabled = function()
-				return vim.bo.filetype ~= "markdown"
-			end,
+            enabled = function()
+                return vim.bo.filetype ~= "markdown"
+            end,
         })
 
         vim.diagnostic.config({
@@ -104,4 +119,3 @@ return {
         })
     end
 }
-
