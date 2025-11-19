@@ -28,6 +28,11 @@ vim.keymap.set(
     'oif err != nil {<CR>}<Esc>Oreturn err<Esc>'
 )
 
+-- LSP specific
+vim.keymap.set('n', '<leader>rn', function()
+  vim.lsp.buf.rename()
+end, { desc = 'Rename symbol' })
+
 -- github copilot
 vim.keymap.set('n', '<leader>ce', function()
   vim.cmd('Copilot enable')
