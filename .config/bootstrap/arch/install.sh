@@ -22,6 +22,7 @@ echo "[bootstrap] Installing packages..."
 
 INSTALLERS=(
     "brave.sh"
+    "crush.sh"
     "delve.sh"
     "fish.sh"
     "ghostty.sh"
