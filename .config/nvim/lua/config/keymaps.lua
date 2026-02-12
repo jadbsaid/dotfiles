@@ -19,7 +19,7 @@ vim.keymap.set('n', '<leader>ds', function()
 end)
 
 vim.keymap.set('n', '<leader>df', function()
-  vim.diagnostic.open_float(nil, { focusable = false })
+  vim.diagnostic.open_float(nil, { focusable = true })
 end, {})
 
 vim.keymap.set(
