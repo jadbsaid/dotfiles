@@ -22,6 +22,10 @@ vim.keymap.set('n', '<leader>df', function()
   vim.diagnostic.open_float(nil, { focusable = true })
 end, {})
 
+vim.keymap.set("n", "<leader>td", function()
+    vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+end, { desc = "Toggle diagnostics" })
+
 vim.keymap.set(
     'n',
     '<leader>er',
