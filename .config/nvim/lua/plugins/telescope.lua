@@ -1,15 +1,16 @@
 return {
     "nvim-telescope/telescope.nvim",
-
-    tag = "0.1.5",
-
+    version = '*',
     dependencies = {
-        "nvim-lua/plenary.nvim"
+        "nvim-lua/plenary.nvim",
+        { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
     },
 
     config = function()
-        require('telescope').setup({
+        local telescope = require('telescope')
+        telescope.setup({
             defaults = {
+                file_ignore_patterns = { "node_modules", ".git/" },
                 vimgrep_arguments = {
                     'rg',
                     '--color=never',
@@ -19,10 +20,10 @@ return {
                     '--column',
                     '--smart-case',
                     '--hidden',
-                    '--no-ignore',
                 }
             },
         })
+        telescope.load_extension('fzf')
 
         local builtin = require('telescope.builtin')
         vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
