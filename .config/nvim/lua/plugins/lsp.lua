@@ -40,6 +40,7 @@ return {
                 "rust_analyzer",
                 "gopls",
                 "ts_ls",
+                "svelte",
             },
             handlers = {
                 function(server_name) -- default handler (optional)

@@ -9,6 +9,7 @@ return {
                 go = { "gofmt" },
                 javascript = { "prettier" },
                 typescript = { "prettier" },
+                svelte = { "prettier" },
             },
         })
     end
