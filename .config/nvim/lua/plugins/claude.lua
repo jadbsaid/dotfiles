@@ -7,17 +7,17 @@ return {
     },
     lazy = false,
     keys = {
-        { "<leader>a",  nil,                        desc = "AI/Claude Code" },
-        { "<leader>ab", "<cmd>ClaudeCodeAdd %<cr>", desc = "Add current buffer" },
-        { "<leader>as", "<cmd>ClaudeCodeSend<cr>",  mode = "v", desc = "Send to Claude" },
+        { "<leader>c",  nil,                        desc = "AI/Claude Code" },
+        { "<leader>cb", "<cmd>ClaudeCodeAdd %<cr>", desc = "Add current buffer" },
+        { "<leader>cs", "<cmd>ClaudeCodeSend<cr>",  mode = "v", desc = "Send to Claude" },
         {
-            "<leader>as",
+            "<leader>cf",
             "<cmd>ClaudeCodeTreeAdd<cr>",
             desc = "Add file",
             ft = { "NvimTree", "neo-tree", "oil", "minifiles", "netrw" },
         },
         -- Diff management
-        { "<leader>aa", "<cmd>ClaudeCodeDiffAccept<cr>", desc = "Accept diff" },
-        { "<leader>ad", "<cmd>ClaudeCodeDiffDeny<cr>",   desc = "Deny diff" },
+        { "<leader>ca", "<cmd>ClaudeCodeDiffAccept<cr>", desc = "Accept diff" },
+        { "<leader>cd", "<cmd>ClaudeCodeDiffDeny<cr>",   desc = "Deny diff" },
     },
 }
