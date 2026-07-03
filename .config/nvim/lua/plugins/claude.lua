@@ -1,10 +1,12 @@
 return {
     "coder/claudecode.nvim",
-    opts = {
-        terminal = {
-            provider = "none",
-        },
-    },
+    config = function()
+        require("claudecode").setup({
+            terminal = {
+                provider = "none",
+            },
+        })
+    end,
     lazy = false,
     keys = {
         { "<leader>c",  nil,                        desc = "AI/Claude Code" },
