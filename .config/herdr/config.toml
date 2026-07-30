@@ -1,0 +1,26 @@
+# disable first-run onboarding screen
+onboarding = false
+
+[theme]
+name = "catppuccin"
+auto_switch = true
+dark_name = "catppuccin"
+light_name = "catppuccin-latte"
+
+[keys]
+prefix = "ctrl+a"
+
+new_tab = "prefix+c"
+
+# ctrl + h/j/k/l pane navigation
+# uses christoomey/vim-tmux-navigator to avoid prefix use
+focus_pane_left = "ctrl+h"
+focus_pane_down = "ctrl+j"
+focus_pane_up = "ctrl+k"
+focus_pane_right = "ctrl+l"
+
+# use prefix + | to split window vertically
+split_vertical = "prefix+|"
+
+# use prefix + - to split window horizontally
+split_horizontal = "prefix+minus"
