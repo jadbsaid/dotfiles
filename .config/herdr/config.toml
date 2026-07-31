@@ -24,3 +24,6 @@ split_vertical = "prefix+|"
 
 # use prefix + - to split window horizontally
 split_horizontal = "prefix+minus"
+
+[ui.sound]
+enabled = false
