@@ -25,5 +25,15 @@ split_vertical = "prefix+|"
 # use prefix + - to split window horizontally
 split_horizontal = "prefix+minus"
 
+# use j/k to navigate workspaces
+navigate_workspace_up = "k"
+navigate_workspace_down = "j"
+
+# use up/down to move panes, since defaults (j/k) are taken by workspace nav
+navigate_pane_up = "up"
+navigate_pane_down = "down"
+navigate_pane_left = "h" # default
+navigate_pane_right = "l" # default
+
 [ui.sound]
 enabled = false
