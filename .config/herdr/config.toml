@@ -3,7 +3,7 @@ onboarding = false
 
 [theme]
 name = "catppuccin"
-auto_switch = true
+auto_switch = false
 dark_name = "catppuccin"
 light_name = "catppuccin-latte"
 
